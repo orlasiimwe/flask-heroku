@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title> Welcome </title>
+{% endblock head %}
+
+{%block body%}
+
+    <h3>Well,Hello there!!</h3>
+
+    <h6>Create some posts!!</h6>
+
+
+        <form action='/add' method='POST'>
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" name="title"><br>
+                <label for="content">Content:</label><br>
+                <input type="text" id="content" name="content">
+                </br>
+
+                <button class="btn btn-submit">Add Post </button>
+                <a href="/posts">List Posts </a>
+
+        </form>
+
+    
+   
+
+    
+
+{%endblock%}
